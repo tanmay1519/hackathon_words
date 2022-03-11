@@ -39,7 +39,7 @@ newval+=val[i];
     let preposition = ["of","the","in","on"]
     let output :string ="" ;
     for (let i=0;i<splitted.length;i++){
-      if (!preposition.includes(splitted[i]))
+      if (!preposition.includes(splitted[i])|| i==0||splitted[i-1]==".")
     { if (splitted[i].length>0) {let x = splitted[i][0];
       let y = splitted[i].slice(1);
       x=x.toUpperCase()
